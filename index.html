@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gifinator</title>
+	<!-- Meyer's reset -->
+	<link rel="stylesheet" type="text/css" href="https://meyerweb.com/eric/tools/css/reset/reset200802.css">
+	<!-- My style sheet -->
+	<link rel="stylesheet" type="text/css" href="assets/style/style.css">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Press+Start+2P" rel="stylesheet">
+	<!-- Bootstrap -->
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+	<div class="jumbotron">
+		<h1>The Gifinator</h1>
+		<p>INSTRUCTIONS: Type something in the text field below to add to the already awesome collection of buttons. Then click them and be headbutted in the face with GIFs!</p>
+	</div>
+</div>
+<div class="container">
+	<div class="btn-group" role="group" aria-label="...">
+		<div id="buttons"></div>
+	</div>
+</div>
+
+<div class="container">
+	<input id="input" type="text" class="form-control" placeholder="Type something tough!" aria-describedby="basic-addon1">
+	<h1 id="submit" type="submit"><span class="label label-default">Click me, bro!</span></h1>
+	<div id="output"></div>
+</div>
+
+<!-- Link to jQuery. -->
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+ <!-- Link to my JS script. -->
+ <script type="text/javascript" src="assets/script/script.js"></script>
+</body>
+</html>
