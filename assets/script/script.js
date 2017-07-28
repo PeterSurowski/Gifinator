@@ -44,15 +44,18 @@ $(document).on('click', 'button', function() {
 		//And for each item in the result...
 		for (i = 0; i < result.length; i++) {
 			//We create a var containing an image tag...
-			var imgTag = $('<img>');
+			var imgTag = $('<img class="gif">');
 			//With an attr of src.
 			imgTag.attr('src', response.data[i].images.fixed_width_still.url);
 			//Give it attributes of data-still and data-animate and a data-state value.
 			imgTag.attr('data-still', response.data[i].images.fixed_width_still.url);
 			imgTag.attr('data-animate', response.data[i].images.fixed_width.url);
 			imgTag.attr('data-state', 'still');
+			//Make a var to hold the rating element
+			var ratingTag = $('<div class="rating">Rating: ' + response.data[i].rating + '</div>');
 			//Prepend the image to the #output
 			$('#output').prepend(imgTag);
+			$('#output').prepend(ratingTag);			
 		}
 
 //If you click on a gif...
